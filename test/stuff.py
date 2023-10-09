@@ -1,20 +1,18 @@
 
 # the usual
 
-import new_pyproject
+import robobase
 
-from new_pyproject import Project
+from robobase import Object
 
-p = Project()
+p = Object()
+
+p.whoami()
 
 p.name()
-#Out[5]: 'Project'
+p.vers()
 
 p.desc()
-#Out[6]: 'new python project class'
 
-p.vers()
-#Out[7]: 'v0.01.07'
 
-p.f(2)
 
