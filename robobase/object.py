@@ -16,10 +16,10 @@ class Object(object):
      def __init__(self): #,instance="Instance Name"):
          self._id = id(self)
          self._name="Object"
-         self._desc="Object - primordal base class"
-         self._vers="v0.01.07a-dev" # this is the prev dev vers not pypi package vers yet
+         self._desc="Object - Primary Base Object"
+         self._vers="v0.01.07b" # this is the prev dev vers not pypi package vers yet
          self._model = "" # more for derived classes
-         self._about="About object class"
+         self._about="About Object..."
          self._instance_name = ""
          self._debug_flag = False
        
@@ -36,7 +36,7 @@ class Object(object):
          return self._id
      
      def getName(self):
-           return self._name
+        return self._name
 
      def getDesc(self):
         return self._desc
@@ -55,27 +55,41 @@ class Object(object):
     
      def setDesc(self,d):
          self._desc = d
-
+         
+     def setAbout(self,a):
+         self._about = a
+    
      # not on the public inteface
      # hard code this one 
-     #def setVers(self,v):
+     # def setVers(self,v):
      #    self._vers =v
          
-     #def setAbout(self,a):
-     #     self._about = a
-    
      def setDebugOn(self):
          self._debug_flag = True
          
      def setDebugOff(self):
          self._debug_flag = False
-     
+         
+     #future rem these 2 use set*()
      def debugOn(self):
          self.setDebugOn()
      
      def debugOff(self):
          self.setDebugOff()
          
+     #future, maybe rem not specific enough
+     def debug(self):
+         return (self._debug_flag == True) 
+         
+     def debugIsOn(self):
+         # makes more sense w/ if debugIsOn(): then...
+         return (self._debug_flag == True) #test as bool
+       
+     def isDebugOn(self):
+         # backward compat
+         return self.debugIsOn()
+          #return self.debug()
+      
     # the shell commands
      
      def id(self):
@@ -96,15 +110,5 @@ class Object(object):
      def about(self):
         print(self._about)
         
-     def debug(self):
-         return self._debug_flag
-     
-     def isDebugOn(self):
-         # backward compat
-         return self.debugIsOn()
-          #return self.debug()
-      
-     def debugIsOn(self):
-         # makes more sense w/ if debugIsOn():...
-         return self._debug_flag
-       
+ 
+   
