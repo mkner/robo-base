@@ -71,11 +71,11 @@ class Object(object):
          self._debug_flag = False
          
      #future rem these 2 use set*()
-     def debugOn(self):
-         self.setDebugOn()
+     #def debugOn(self):
+     #    self.setDebugOn()
      
-     def debugOff(self):
-         self.setDebugOff()
+     #def debugOff(self):
+     #    self.setDebugOff()
          
      #future, maybe rem not specific enough
      def debug(self):
