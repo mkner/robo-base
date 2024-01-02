@@ -17,7 +17,7 @@ class Object(object):
          self._id = id(self)
          self._name="Object"
          self._desc="Object - Primary Base Object"
-         self._vers="v0.01.07b" # this is the prev dev vers not pypi package vers yet
+         self._vers="v0.01.07c" # this is the prev dev vers not pypi package vers yet
          self._model = "" # more for derived classes
          self._about="About Object..."
          self._instance_name = ""
