@@ -22,13 +22,23 @@ class Object(object):
          self._about="About Object..."
          self._instance_name = ""
          self._debug_flag = False
-       
+         
      def whoami(self):
-          print(self._name,self._vers,self._model)
-     
+          if len(self._model) > 0:
+           print(self._name + " - " + self._vers +" - "+ self._model) 
+          else:
+           print(self._name + " - " + self._vers) 
+         
+     # def whoami(self):
+     #      print(self._name,self._vers,self._model)
+
      def getWhoami(self):
+         # keep only spaces for now
          return str(self._name+" "+self._vers+" "+self._model)
-     
+        
+     #def getWhoami(self):
+     #     return str(self._name+" - "+self._vers+" "+self._model)
+                  
      def whoamiStr(self):
          return self.getWhoami()
      
