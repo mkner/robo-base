@@ -27,7 +27,7 @@ class Object(object):
 
      def getWhoami(self):
          # space sep for now
-         return str(self._name+" "+self._vers
+         return str(self._name+" "+self._vers)
          #return str(self._name+" "+self._vers+" "+self._model)
                    
      def whoamiStr(self):
