@@ -59,8 +59,8 @@ class Object(object):
      def getAbout(self):
         return self._about
     
-     def getModel(self,m):
-        self._model = m
+     def getModel(self):
+        return self._model
         
      # set ##
      
