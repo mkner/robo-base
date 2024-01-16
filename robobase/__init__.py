@@ -1,8 +1,7 @@
-"""
-robo-base - primary objects 
-"""
 
-# flit uses __version__ as one source version 
+# robo-base - primary objects 
+
+# flit et al uses __version__ as one source version 
 
 __version__ = 'v0.01.05b'
 
