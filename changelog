@@ -1,5 +1,8 @@
 # ChangeLog
 
+2024-01-17 - 0.01.05 -  release 0.01.05 production version
+
 2024-01-16 - 0.01.05c - start this changelog
                         add model interface functions
                         clean up code section structure logic & comments
+                        release 0.01.05c beta 
